@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openElisGlobalPlugin>
+<version>1.0</version>
+<analyzerImporter>
+<extension_point path="org.openelisglobal.plugin.AnalyzerImporterPlugin" >
+    <extension path="com.intellisoft.oe.plugin.analyzer.XnlXpImporter" />   
+    <description value="Processes results from XN-L or XP analyzers" />
+</extension_point>
+</analyzerImporter>
+<menu>
+    <extension_point path="org.openelisglobal.plugin.MenuPlugin" >
+    <extension path="com.intellisoft.oe.plugin.analyzer.XnlXpMenu" />   
+    <description value="Menu for XN-L and XP plugin" />
+</extension_point>
+</menu>
+<permission>
+    <extension_point path="org.openelisglobal.plugin.PermissionPlugin" >
+        <extension path="com.intellisoft.oe.plugin.analyzer.XnlXpPermission" />
+        <description value="XN-L and XP plugin permission" />
+    </extension_point>
+</permission>
+</openElisGlobalPlugin>

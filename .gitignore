@@ -1,0 +1,12 @@
+# vscode files
+.classpath
+.factorypath
+.project
+.settings
+.vscode
+
+# build folder
+target
+
+# macOS files
+.DS_Store

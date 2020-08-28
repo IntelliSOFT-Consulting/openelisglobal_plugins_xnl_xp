@@ -26,6 +26,7 @@ public class XnlXpImporter implements AnalyzerImporterPlugin {
 
     /**
      * Load test name mappings from the test_mapping file.
+     * @return a map of test names from analyzer to those in OpenELIS
      */
     private List<PluginAnalyzerService.TestMapping> loadTestMapping() {
         try {
@@ -45,16 +46,21 @@ public class XnlXpImporter implements AnalyzerImporterPlugin {
         if (lines.size() <= 1) {
             return false;
         }
-        return isSupported(lines);
+        return isSupported(lines.get(1)); //skip the headers and pick the first result
     }
 
-    private boolean isSupported(List<String> lines) {
+    /**
+     * Checks if the results being imported is from any of the supported analyzers. Supported analyzers
+     * are configured in the supported file.
+     * @param result result picked from the file to be processed
+     * @return true if the results are from a supported analyzer
+     */
+    private boolean isSupported(String result) {
         boolean supported = false;
         try {
             URL supportedFile = getClass().getResource("/supported");
             List<String> supportedInstruments = Files.readAllLines(Paths.get(supportedFile.toURI()));
-            String firstLine = lines.get(1);
-            supported = supportedInstruments.stream().anyMatch(inst -> firstLine.contains(inst));
+            supported = supportedInstruments.stream().anyMatch(inst -> result.contains(inst));
         } catch (Exception e) {
             throw new RuntimeException("An error occured while reading the supported file.", e);
         }

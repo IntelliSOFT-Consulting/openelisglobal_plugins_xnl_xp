@@ -1,33 +1,33 @@
-WBC        WBC         3/uL
-RBC        RBC         6/uL
+WBC        WBC         10^3/uL
+RBC        RBC         10^6/uL
 HGB        HGB         g/dL
 HCT        HCT         %
 MCV        MCV         fL
 MCH        MCH         pg
 MCHC       MCHC        g/dL
-PLT        PLT         3/uL
+PLT        PLT         10^3/uL
 RDW-CV     RDW-CV      %
 MPV        MPV         fL
-NEUT#      NEUT #      3/uL
-LYMPH#     LYMPH #     3/uL
-MONO#      MONO #      3/uL
-EO#        EO #        3/uL
-BASO#      BASO #      3/uL
+NEUT#      NEUT #      10^3/uL
+LYMPH#     LYMPH #     10^3/uL
+MONO#      MONO #      10^3/uL
+EO#        EO #        10^3/uL
+BASO#      BASO #      10^3/uL
 NEUT%      NEUT %      %
 LYMPH%     LYMPH %     %
 MONO%      MONO %      %
 EO%        EO %        %
 BASO%      BASO %      %
-IG#        IG #        3/uL
+IG#        IG #        10^3/uL
 RET%       RET %       %
-RET#       RET #       6/uL
+RET#       RET #       10^6/uL
 IRF        IRF         %
 W-SCR      W-SCR       %
 W-MCR      W-MCR       %
 W-LCR      W-LCR       %
-W-SCC      W-SCC       2/uL
-W-MCC      W-MCC       2/uL
-W-LCC      W-LCC       2/ul
+W-SCC      W-SCC       10^2/uL
+W-MCC      W-MCC       10^2/uL
+W-LCC      W-LCC       10^2/ul
 P-LCR      P-LCR       %
 W-SMV      W-SMV       
 W-LMV      W-LMV

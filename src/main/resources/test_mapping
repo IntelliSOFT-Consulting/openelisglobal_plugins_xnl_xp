@@ -22,3 +22,12 @@ IG#        IG #        3/uL
 RET%       RET %       %
 RET#       RET #       6/uL
 IRF        IRF         %
+W-SCR      W-SCR       %
+W-MCR      W-MCR       %
+W-LCR      W-LCR       %
+W-SCC      W-SCC       2/uL
+W-MCC      W-MCC       2/uL
+W-LCC      W-LCC       2/ul
+P-LCR      P-LCR       %
+W-SMV      W-SMV       
+W-LMV      W-LMV
